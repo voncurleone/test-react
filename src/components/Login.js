@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        console.log(username, + ", " + password)
+        console.log("username: " + username + ", password: " + password)
     };
 
     return (
