@@ -1,0 +1,62 @@
+/* Set the background color of the page */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the login form */
+.login-form {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the form input fields and button */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    /* Make the login form full width on mobile devices */
+    .login-form {
+        max-width: none;
+        width: 100%;
+    }
+
+    /* Adjust the input field padding on mobile devices */
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        padding: 10px 16px;
+    }
+
+    /* Adjust the button padding on mobile devices */
+    .login-form button {
+        padding: 10px 16px;
+    }
+}
