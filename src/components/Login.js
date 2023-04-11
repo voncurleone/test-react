@@ -16,23 +16,24 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        console.log("username: " + username + ", password: " + password)
+        console.log("username: " + username + ", password: " + password);
+        window.location.assign("/index")
     };
 
     return (
-        <form onSubmit={handleSubmit} className={"login-form"}>
-            <label>
-                Username:
-                <input type="text" value={username} onChange={handleUsernameChange} />
-            </label>
-            <br />
-            <label>
-                Password:
-                <input type="password" value={password} onChange={handlePasswordChange} />
-            </label>
-            <br />
-            <button type="submit">Login</button>
-        </form>
+      <form onSubmit={handleSubmit} className={"login-form"}>
+        <label>
+          Username:
+          <input type="text" value={username} onChange={handleUsernameChange} />
+        </label>
+        <br />
+        <label>
+          Password:
+          <input type="password" value={password} onChange={handlePasswordChange} />
+        </label>
+        <br />
+        <button type="submit">Login</button>
+      </form>
     );
 };
 
